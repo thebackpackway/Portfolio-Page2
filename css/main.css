@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+h3{
+  font-family: 'Arimo', sans-serif;
+  text-align: left;
+  font-size: 25px;
+}
+
+h4, h5, h6, p, a{
+  font-family: 'Arimo', sans-serif;
+  text-align: left;
+  font-size: 16px;
+}
+
+header, section, footer {
+  padding: 10px;
+}
+
+section.top-banner {
+  padding: 5%;
+  min-height: 85vh;
+  background-size: cover;
+  background-position: top;
+  background-image: url("../images/penguin.gif");
+}
+
+/*nav {
+  text-align: right;
+}*/
+
+header a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border-left-style: solid;
+  border-width: 1px;
+  border-color: white;
+  display:inline-block;
+  padding: 1%;
+}
+
+section.experience, section.skills{
+  padding: 15vh;
+}
+
+
+div.title {
+  /*min-height: 60vh;*/
+  text-align: center;
+}
+
+div.about-me-arround {
+  padding: 7% 30% 7% 30%;
+  background: grey;
+
+}
+
+div.about-me {
+  padding: 15%;
+  background: white;
+}
+
+footer i {
+  color: blue;
+}
+
+.skills i {
+  color: #FFBF00;
+}
+
+.fa, .skills h3{
+  display: block;
+  text-align: center;
+}
+
+/**Things to style
+
+CSS RESET (*)
+
+ADD PADDING AND MARGIN TO EACH SECTION
+
+STYLE ICONS
+
+BACKGROUND COLORS + IMAGES

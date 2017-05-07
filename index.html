@@ -1,0 +1,81 @@
+---
+layout: default
+title: Julia
+map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1010290.7975268234!2d114.51105816599815!3d-8.455697404655568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sde!2sid!4v1493947661199" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+skills:
+  - name: Web Development
+    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    icon: star
+  - name: Photography
+    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    icon: camera
+  - name: Blogging
+    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    icon: pencil
+  - name: Dreaming
+    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    icon: heart
+  - name: Travelling
+    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    icon: map
+  - name: Relaxing
+    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    icon: cloud
+
+experience:
+  - name: MacDonalds
+    position: General Manager
+    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    icon: user
+  - name: Queens
+    position: Sales Manager
+    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    icon: user
+  - name: Saint-Claude
+    position: CEO
+    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    icon: user
+---
+
+  <section class="about-me">
+    <div class="about-me-arround">
+      <div class="about-me">
+        <h2>About Me  </h2>
+        <p>Hello guys, my name is Julia and i'm from Vienna. I'm very excited to be here and to learn how to code. I started this course so I'll be able to optimise my own travel blog and work indepently.</p>
+      </div>
+    </div>
+  </section>
+  <section class="skills grid">
+    <h2 class="col-12">My skills</h2>
+
+    {% for skill in page.skills %}
+    <div class="four col-4">
+      <i class="fa fa-{{ skill.icon }}" aria-hidden="true"></i>
+      <h3>{{ skill.name }}</h3>
+      <p>{{ skill.description }}</p>
+    </div>
+    {% endfor %}
+
+  </section>
+  <section class="map">
+
+    {{page.map}}
+
+  </section>
+  <section class="experience grid">
+    <h2 class="col-12">My Experience</h2>
+
+    {% for experience in page.experience %}
+    <div class="col-1">
+      <i class="fa fa-{{ experience.icon }}" aria-hidden="true"></i>
+    </div>
+    <div class="col-3">
+      <h3>{{ experience.name }}</h3>
+      <h4>{{ experience.position }}</h4>
+    </div>
+    <div class="col-8">
+      <p>{{ experience.description }}</p>
+    </div>
+    {% endfor %}
+
+  </section>
