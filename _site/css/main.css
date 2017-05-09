@@ -69,8 +69,19 @@ div.about-me {
   background: white;
 }
 
+label, input, textarea, button{
+  text-align: center;
+  width: 100%;
+  color:red;
+  padding:1%;
+}
+
+footer.name{
+  text-align: center;
+}
+
 footer i {
-  color: blue;
+  color: red;
 }
 
 .skills i {

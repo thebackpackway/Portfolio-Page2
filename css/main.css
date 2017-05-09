@@ -69,6 +69,10 @@ div.about-me {
   background: white;
 }
 
+footer.name{
+  text-align: center;
+ }
+
 footer i {
   color: blue;
 }
